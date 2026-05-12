@@ -31,5 +31,6 @@ echo "Linked starship.toml"
 link hypr
 link wezterm
 link nvim
+link zed
 
 echo "Done."
