@@ -20,7 +20,7 @@ end)
 hl.config({
     general = {
         gaps_in = 4,
-        gaps_out = 12,
+        gaps_out = 8,
         border_size = 0,
         resize_on_border = true,
         allow_tearing = false,
@@ -70,11 +70,18 @@ hl.config({
     },
 })
 
+hl.layer_rule({
+    match = { namespace = "waybar" },
+    blur = true,
+    ignore_alpha = 0.5,
+})
+
 hl.curve("easeOutQuint", { type = "bezier", points = { { 0.22, 1 }, { 0.36, 1 } } })
+hl.curve( "fastslide", { type = "bezier", points = { {0.1, 1}, {0.1, 1} } } )
 
 hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
 hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "easeOutQuint" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 4, bezier = "easeOutQuint" })
 hl.animation({ leaf = "border", enabled = true, speed = 6, bezier = "default" })
 hl.animation({ leaf = "fade", enabled = true, speed = 6, bezier = "default" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "easeOutQuint" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "fastslide"})

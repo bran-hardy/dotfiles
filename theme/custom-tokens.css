@@ -2,12 +2,20 @@
    Base theme
    ============================================================ */
 
-@define-color bg          #1A2625;
-@define-color surface     #32403E;
-@define-color muted       #595954;
-@define-color subtle      #8C7C6D;
-@define-color text        #BFA08E;
-@define-color accent      #F2CBBD;
+/*
+   #0D0D0D
+   #405949
+   #90A680
+   #F2EEB6
+   #F2E0D5
+   */
+
+@define-color bg          #0D0D0D;
+@define-color surface     #405949;
+@define-color muted       #90A680;
+@define-color subtle      #90A680;
+@define-color text        #F2E0D5;
+@define-color accent      #F2EEB6;
 
 /* ============================================================
    Syntax highlighting

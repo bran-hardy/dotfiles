@@ -14,12 +14,15 @@ hl.bind(mod .. " + A", hl.dsp.exec_cmd("rofi -show window"))
 
 -- Window managment
 hl.bind(mod .. " + C", hl.dsp.window.close())
-hl.bind(mod .. " + SHIFT + E", hl.dsp.exit())
 hl.bind(mod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mod .. " + F", hl.dsp.window.fullscreen())
 --hl.bind(mod .. " + J",		hl.dsp.layout_msg("togglesplit"))
 
 hl.bind(mod .. " + X", hl.dsp.exec_cmd("pkill waybar && waybar &"))
+
+-- Session management
+hl.bind(mod .. " + SHIFT + E", hl.dsp.exit())
+hl.bind(mod .. " + M", hl.dsp.exec_cmd("wlogout"))
 
 -- Focus
 hl.bind(mod .. " + left", hl.dsp.focus({ direction = "l" }))

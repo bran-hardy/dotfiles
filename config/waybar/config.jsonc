@@ -15,10 +15,10 @@
     "modules-left": ["group/distro-group", "group/storage", "group/system"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
+        "clock",
         "group/audio",
         "group/connections",
         "battery",
-        "clock",
         "group/tray-group",
     ],
 }
