@@ -1,0 +1,24 @@
+{
+    "layer": "top",
+    "height": 32,
+    "spacing": 6,
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
+    "include": [
+        "./modules/groups.jsonc",
+        "./modules/battery.jsonc",
+        "./modules/clock.jsonc",
+        "./modules/audio.jsonc",
+        "./modules/hyprland.jsonc",
+    ],
+    "modules-left": ["group/distro-group", "group/storage", "group/system"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+        "group/audio",
+        "group/connections",
+        "battery",
+        "clock",
+        "group/tray-group",
+    ],
+}

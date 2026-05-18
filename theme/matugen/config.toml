@@ -1,0 +1,10 @@
+[config]
+reload_apps = false
+
+[templates.token-css]
+input_path = "./templates/tokens.css"
+output_path = "./../tokens.css"
+
+[templates.colors-lua]
+input_path = "./templates/colors.lua"
+output_path = "./../colors.lua"

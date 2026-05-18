@@ -32,5 +32,6 @@ link hypr
 link wezterm
 link nvim
 link zed
+link waybar
 
 echo "Done."

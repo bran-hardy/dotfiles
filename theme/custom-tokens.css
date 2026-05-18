@@ -1,0 +1,45 @@
+/* ============================================================
+   Base theme
+   ============================================================ */
+
+@define-color bg          #1A2625;
+@define-color surface     #32403E;
+@define-color muted       #595954;
+@define-color subtle      #8C7C6D;
+@define-color text        #BFA08E;
+@define-color accent      #F2CBBD;
+
+/* ============================================================
+   Syntax highlighting
+   ============================================================ */
+
+@define-color syntax-keyword   #F2CBBD;
+@define-color syntax-string    #7A9E8E;
+@define-color syntax-number    #C4955A;
+@define-color syntax-comment   #595954;
+@define-color syntax-function  #7A8FAD;
+@define-color syntax-type      #5E9E96;
+@define-color syntax-constant  #D4A96A;
+@define-color syntax-operator  #8C7C6D;
+
+/* ============================================================
+   Diagnostics
+   ============================================================ */
+
+@define-color error        #C4574A;
+@define-color error-bg     #2E1A18;
+@define-color warning      #B8862A;
+@define-color warning-bg   #271E10;
+@define-color info         #7A8FAD;
+@define-color info-bg      #17202B;
+@define-color hint         #595954;
+
+/* ============================================================
+   UI states & git
+   ============================================================ */
+
+@define-color selection-bg     #32635C;
+@define-color match-highlight  #3D2E14;
+@define-color git-added        #7A9E8E;
+@define-color git-modified     #C4955A;
+@define-color git-deleted      #C4574A;

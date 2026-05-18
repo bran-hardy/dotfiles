@@ -7,11 +7,92 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Gruvbox Dark",
-  },
+    // Theme
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "agent": {
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Steel Mist Dark",
+    },
+
+    // Fonts
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "ui_font_weight": 300,
+    "buffer_font_weight": 300,
+    "buffer_line_height": {
+        "custom": 1.7,
+    },
+
+    "cursor_blink": false,
+    "cursor_shape": "bar",
+
+    "always_treat_brackets_as_autoclosed": true,
+    "toolbar": {
+        "breadcrumbs": true,
+        "quick_actions": false,
+    },
+
+    "title_bar": {
+        "show_branch_name": true,
+        "show_sign_in": false,
+        "show_user_picture": false,
+        "show_onboarding_banner": false,
+    },
+
+    // Panel Settings
+    "git_panel": {
+        "button": true,
+        "dock": "right",
+    },
+    "project_panel": {
+        "button": true,
+        "dock": "right",
+        "hide_root": true,
+        "bold_folder_labels": true,
+        "entry_spacing": "comfortable",
+        "indent_guides": {
+            "show": "never",
+        },
+        "scrollbar": {
+            "show": "never",
+        },
+        "indent_size": 20,
+    },
+    "search": {
+        "button": false,
+    },
+    "enable_language_server": true,
+
+    "gutter": {
+        "line_numbers": true,
+        "folds": false,
+    },
+
+    "prettier": {
+        "allowed": true,
+    },
+
+    "centered_layout": {
+        "left_padding": 0.1,
+        "right_padding": 0,
+    },
+
+    "hard_tabs": false,
+    "tab_size": 4,
+    "telemetry": {
+        "metrics": false,
+        "diagnostics": false,
+    },
 }
