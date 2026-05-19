@@ -14,7 +14,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("awww-daemon")
     hl.exec_cmd("sleep 0.5 & awww img " ..
         os.getenv("HOME") .. "/dotfiles/wallpapers/wallpaper.jpeg --transition-type any --transition-duration 0.3")
-    hl.exec_cmd("waybar")
+    hl.exec_cmd("quickshell")
 end)
 
 hl.config({
