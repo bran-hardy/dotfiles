@@ -1,0 +1,5 @@
+[config.quickshell]
+
+[templates.wallpaper-theme-dark]
+input_path = '~/.config/matugen/templates/colors-dark.json'
+output_path = '~/.config/quickshell/Data/matugen/colors-dark.json'

@@ -1,49 +1,38 @@
 import QtQuick
-import Quickshell.Widgets
 
-WrapperItem {
-    implicitWidth: parent.width
-    implicitHeight: 48
+import qs.Services
 
-    anchors {
-        top: parent.top
-        horizontalCenter: parent.horizontalCenter
+Rectangle {
+    id: root
+
+    implicitHeight: 40
+    color: Colors.colors.background
+
+    Left {
+        anchors {
+            left: parent.left
+            top: parent.top
+            bottom: parent.bottom
+            leftMargin: 8
+        }
     }
 
-    WrapperRectangle {
-        radius: 0
-        color: "transparent"
+    Center {
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+            leftMargin: 8
+            rightMargin: 8
+        }
+    }
 
-        Loader {
-            active: true
-            asynchronous: false
-            sourceComponent: Item {
-                anchors {
-                    fill: parent
-                    leftMargin: 5
-                    rightMargin: 5
-                }
-
-                Left {
-                    implicitHeight: parent.height
-                    implicitWidth: parent.width / 6
-
-                    anchors {
-                        left: parent.left
-                        verticalCenter: parent.verticalCenter
-                    }
-                }
-
-                Right {
-                    implicitHeight: parent.height
-                    implicitWidth: parent.width / 6
-
-                    anchors {
-                        left: parent.right
-                        verticalCenter: parent.verticalCenter
-                    }
-                }
-            }
+    Right {
+        anchors {
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            rightMargin: 8
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+    "workbench.sideBar.location": "left",
+    "workbench.tree.indent": 16,
+    "workbench.activityBar.experimental.fontSize": 16,
+    "workbench.view.alwaysShowHeaderActions": false,
+    "workbench.iconTheme": "vs-seti",
+    "editor.fontSize": 14
+}

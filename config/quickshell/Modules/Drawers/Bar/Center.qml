@@ -8,5 +8,5 @@ RowLayout {
 
     spacing: 8
 
-    Workspaces {}
+    Clock { }
 }
