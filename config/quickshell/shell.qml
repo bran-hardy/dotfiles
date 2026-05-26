@@ -1,9 +1,10 @@
 import QtQuick
 import Quickshell
 
-import qs.Modules.Drawers
+import qs.Services
+import qs.Graphics.Drawers
 
 ShellRoot {
-    
-    Drawers {}
+
+    Drawers {}    
 }

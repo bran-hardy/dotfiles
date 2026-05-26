@@ -28,7 +28,7 @@
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "Steel Mist Dark",
+        "dark": "Gruvbox Dark Hard",
     },
 
     // Fonts

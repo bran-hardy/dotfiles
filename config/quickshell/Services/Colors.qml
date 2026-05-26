@@ -6,6 +6,7 @@ import Quickshell
 import Quickshell.Io
 
 import qs.Configs
+import qs.Utilities
 
 Singleton {
     id: root
@@ -19,7 +20,7 @@ Singleton {
     FileView {
         id: matugenColorsFile
 
-        path: Configs.colors
+        path: Configs.colors.pathForDark //Paths.dirShell + "/Data/colors-dark.json"
         watchChanges: true
         onFileChanged: reload()
     }
@@ -33,7 +34,7 @@ Singleton {
         readonly property color surface_container_high: root.matugenTemplateColors.colors.surface_container_high
         readonly property color surface_container_highest: root.matugenTemplateColors.colors.surface_container_highest
         readonly property color surface_container_low: root.matugenTemplateColors.colors.surface_container_low
-        readonly property color surface_container_lowest: root.matugenTemplateColors.surface_container_lowest
+        readonly property color surface_container_lowest: root.matugenTemplateColors.colors.surface_container_lowest
         readonly property color surface_dim: root.matugenTemplateColors.colors.surface_dim
         readonly property color surface_tint: root.matugenTemplateColors.colors.surface_tint
         readonly property color surface_variant: root.matugenTemplateColors.colors.surface_variant
@@ -51,7 +52,7 @@ Singleton {
         readonly property color secondary: root.matugenTemplateColors.colors.secondary
         readonly property color secondary_container: root.matugenTemplateColors.colors.secondary_container
         readonly property color secondary_fixed: root.matugenTemplateColors.colors.secondary_fixed
-        readonly property color secondary_fixed_dim: root.matugenTemplateColors.scolors.econdary_fixed_dim
+        readonly property color secondary_fixed_dim: root.matugenTemplateColors.colors.econdary_fixed_dim
 
         readonly property color scrim: root.matugenTemplateColors.colors.scrim
 

@@ -71,7 +71,7 @@ hl.config({
 })
 
 hl.layer_rule({
-    match = { namespace = "waybar" },
+    match = { namespace = "quickshell" },
     blur = true,
     ignore_alpha = 0.5,
 })

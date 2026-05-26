@@ -28,12 +28,12 @@ truncate_to_repo = true
 format           = "[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-symbol = " "
+symbol = ""
 style  = "bold purple"
 format = "on [$symbol$branch]($style) "
 
 [git_status]
-format     = '([\[$all_status$ahead_behind\]]($style) )'
+format     = '([$all_status$ahead_behind]($style) )'
 style      = "bold yellow"
 conflicted = "="
 ahead      = "⇡${count}"

@@ -14,4 +14,11 @@ Singleton {
     PwObjectTracker {
         objects: [ root.sink ]
     }
+
+    function getIcon(): string {
+        if (muted) return "volume_off"
+        if (volume === 0) return "volume_mute"
+        if (volume < 0.5) return "volume_down"
+        return "volume_up"
+    }
 }

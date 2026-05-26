@@ -1,0 +1,40 @@
+{
+    "styles": {
+        "fonts": {
+            "family": {
+                "material": "Material Symbols Rounded"
+            }
+        },
+        "general": {
+            "spacing": {
+                "sm": 4,
+                "md": 8,
+                "lg": 16
+            },
+            "rounding": {
+                "sm": 5,
+                "md": 10,
+                "lg": 20
+            },
+            "margin": {
+                "sm": 4,
+                "md": 8,
+                "lg": 16
+            },
+            "padding": {
+                "sm": 4,
+                "md": 8,
+                "lg": 16
+            }
+        }
+    },
+    "bar": {
+        "barHeight": "40",
+        "persistantWorkspaces": 5
+    },
+    "colors": {
+        "isDarkMode": true,
+        "pathForDark": "/home/bhardy/.config/quickshell/Data/colors-dark.json",
+        "pathForLight": "/home/bhardy/quickshell/Data/colors-light.json"
+    }
+}
