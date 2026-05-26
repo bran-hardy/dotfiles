@@ -6,7 +6,7 @@ local browser = "firefox"
 local launcher = "rofi -show drun"
 
 hl.env("XCURSOR_SIZE", "24")
-hl.env("XCURSOR_THEME", "Adwaita")
+hl.env("XCURSOR_THEME", "Bibata-Modern-Classic") -- Alternative Adwaita
 hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 
@@ -32,8 +32,8 @@ hl.config({
     },
 
     decoration = {
-        rounding = 10,
-        rounding_power = 3,
+        rounding = 8,
+        rounding_power = 2,
         active_opacity = 1.0,
         inactive_opacity = 0.75,
         blur = {
